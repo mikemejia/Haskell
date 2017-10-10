@@ -30,3 +30,12 @@ isOdd :: Int -> Bool
 isOdd n
 	| n `mod` 2 == 0 = False
 	| otherwise = True
+
+whatGrade :: Int -> String
+
+whatGrade age
+	| (age >= 5 && age <= 6) = "kindergarten"
+	| (age >= 7 && age <= 10) = "elementary"
+	| (age >= 11 && age <= 13) = "Middle"
+	| (age >= 14 && age <= 18) = "high school"
+	otherwise "college"
